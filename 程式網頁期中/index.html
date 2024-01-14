@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <nav>
+        <ul id="main_menu">
+            <li><a href="index.html"><tt>Me</tt></a></li>
+            <li><a href="Obsessed.html"><tt>Musical</tt></a></li>
+            <li><a href="work.html"><tt>Music</tt></a></li>
+            <li><a href="Product.html"><tt>Work</tt></a></li>
+        </ul>
+    </nav>
+
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Me Me</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    </head>
+    <div class="box">
+        <h1>About Me</h1>
+        <div class="face"></div>
+        <div class="introduce">
+            <h2><tt>''Be Loyal To What Matters.''</tt></h2>
+            <h4>——————————————————————————————————————</h4>
+            <p>早安我是<b>李清赫</b>，但更多人叫我<b>阿清/幽靈</b>，挑一個喜歡的叫就好了！</p>
+            <p>目前是<b>多媒體動畫系三年級生</b>，劇本跟分鏡技能在試圖點滿。</p>
+            <h4>——————————————————————————————————————</h4>
+
+            <div class="social-icons">
+                <table>
+                    <tr>
+                        <td>
+                            <a class="FB" target="_blank" href="https://www.facebook.com/SoberLee551"></a>
+                        </td>
+                        <td>
+                            <a class="Gmail" target="_blank" href="mailto:yu1234015@gmail.com"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 在这里添加 jQuery 代码 -->
+    <script>
+        // 等待文档加载完成
+        $(document).ready(function () {
+            // 选择你要淡入的元素，这里以类名为 "face" 的元素为例
+            $(".face").fadeIn(2000); // 2000 毫秒（2秒）内淡入
+        });
+    </script>
+
+    <!-- 在 body 结束前添加 jQuery 代码 -->
+    <script>
+        // 在文档加载完成后执行
+        $(document).ready(function () {
+            // 为所有类名为 "face" 的元素添加鼠标进入和离开事件处理
+            $(".face, .FB, .Gmail").hover(
+                function () {
+                    // 鼠标进入时，添加额外的类名，这里使用了 animate 类名
+                    $(this).addClass("animate");
+                },
+                function () {
+                    // 鼠标离开时，移除额外的类名
+                    $(this).removeClass("animate");
+                }
+            );
+        });
+    </script>
+
+
+</body>
+
+</html>

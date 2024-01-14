@@ -1,0 +1,141 @@
+body {
+    background-image: url(../img/海量阿清.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box {
+    width: 80%;
+    /* 調整為相對寬度 */
+    max-width: 880px;
+    background-color: rgb(255, 251, 251);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 20px auto;
+    /* 使用 auto 來水平居中 */
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    /*display: flex;
+    justify-content: center;/*讓區塊水平置中*/
+    /*align-items: center;/*讓區塊垂直置中*/
+    /*height: 100vh; /*把的高度設為與瀏覽器視窗同高，如果沒設定這一行，垂直置中不會有作用。*/
+}
+
+#main_menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 50px;
+
+    height: 50px;
+    opacity: 0.8;
+}
+
+#main_menu li {
+    display: inline-block;
+}
+
+#main_menu li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+#main_menu li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+#BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+}
+
+.音樂劇連結 {
+    display: none;
+    width: 50px;
+}
+
+.音樂劇介紹 {
+    display: none;
+    flex: 2;
+    float: right;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    max-width: 1300px;
+    margin: 15px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.POTO,
+.CATS,
+.LES_MIS {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 180px;
+    margin-top: 10px;
+}
+
+.POTO {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/poto.jpg);
+    margin-top: 200px;
+    border-radius: 180px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.CATS {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/CAT.jpg);
+    margin-top: 10px;
+    border-radius: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.LES_MIS {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/les_mis.jpeg);
+    margin-top: 10px;
+    border-radius: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.animate {
+    transform: scale(1.1);
+    /* 悬停时放大到 1.1 倍 */
+}

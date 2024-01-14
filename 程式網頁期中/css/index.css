@@ -1,0 +1,104 @@
+body {
+    background-image: url(../img/who\ am\ i.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: 20px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0.95;
+    ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.face {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/飯友阿清2.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.introduce h2 {
+    color: rgb(165, 0, 0);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: center;
+}
+
+.FB {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/facebook.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+.Gmail {
+    display: block;
+    width: 50px;
+    px;
+    height: 50px;
+    margin-left: 60px;
+    background-image: url(../img/gmail.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#main_menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(255, 251, 251);
+    height: 50px;
+    opacity: 0.8;
+}
+
+#main_menu li {
+    display: inline-block;
+}
+
+#main_menu li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+#main_menu li a:hover {
+    color: brown;
+}
+
+.animate {
+    transform: scale(1.1);
+    /* 悬停时放大到 1.1 倍 */
+}

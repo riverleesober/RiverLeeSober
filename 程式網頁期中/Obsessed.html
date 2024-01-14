@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <nav>
+        <ul id="main_menu">
+            <li><a href="index.html"><tt>Me</tt></a></li>
+            <li><a href="Obsessed.html"><tt>Musical</tt></a></li>
+            <li><a href="work.html"><tt>Music</tt></a></li>
+            <li><a href="Product.html"><tt>Work</tt></a></li>
+        </ul>
+
+    </nav>
+</head>
+
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Me Me</title>
+    <link rel="stylesheet" href="css/Obsessed.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <video autoplay muted loop id="BG">
+        <source src="../程式網頁期中/img/musical.mp4">
+    </video>
+
+
+    <div class="container">
+        <div class="音樂劇連結">
+            <table>
+                <tr>
+                    <td>
+                        <a class="POTO" target="_blank"
+                            href="https://www.youtube.com/watch?v=EGb4hj-EXt0&list=PLRImnjFIgJIWRMkXEoKmaUgW8qihGyRnm"></a>
+
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <a class="CATS" target="_blank"
+                            href="https://www.youtube.com/watch?v=PdsoljAAZbU&list=PLRImnjFIgJIUSE7qPzUkKzaboRzoJK_of"></a>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <a class="LES_MIS" target="_blank"
+                            href="https://www.youtube.com/watch?v=al3Uluec-Pc&list=PL3D062105E64D843D&index=1"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="音樂劇介紹">
+            <h1>癡迷了大半人生的事物——</h1>
+            <h4>——————————————————————————————————————</h4>
+            <h3>還記得讓我踏上這條不歸路的是國小三年級的音樂老師。</h3>
+            <h3>電影版的《歌劇魅影》在有些老舊的投螢幕上更有童話故事的風味。</h3>
+            <h3>很可惜的，除了我以外的其他同學似乎完全提不起興致，老師也在之後沒有繼續將其播完。</h3>
+            <h3>年幼的我不介意用著不穩定的網路、花了將近大半個下午才從盜版電影網站看完了這齣劇的原貌。</h3>
+            <h3>在2020那一年，疫情終於緩和，《歌劇魅影》就傳出了第七次來台灣的消息。</h3>
+            <h3>我拿著自己在網上替人畫圖的薄薄稿費，坐了五個小時的車去到台北。</h3>
+            <h3>2020/12/6號是我的人生轉捩點。</h3>
+            <h4>——————————————————————————————————————</h4>
+            <a href="https://www.youtube.com/@TheShowsMustGoOn" target="_blank">
+                <h3><tt>The Shows Must Go On!</tt></h3>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // 等待文档加载完成
+        $(document).ready(function () {
+            // 选择你要淡入的元素，这里以类名为 "face" 的元素为例
+            $(".音樂劇介紹").slideDown(2000); // 2000 毫秒（2秒）内淡入
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".音樂劇連結").fadeIn(5000); // 2000 毫秒（2秒）内淡入
+        });
+    </script>
+
+    <script>
+        // 在文档加载完成后执行
+        $(document).ready(function () {
+            // 为所有类名为 "face" 的元素添加鼠标进入和离开事件处理
+            $(".POTO, .CATS, .LES_MIS").hover(
+                function () {
+                    // 鼠标进入时，添加额外的类名，这里使用了 animate 类名
+                    $(this).addClass("animate");
+                },
+                function () {
+                    // 鼠标离开时，移除额外的类名
+                    $(this).removeClass("animate");
+                }
+            );
+        });
+    </script>
+
+</body>
+
+</html>

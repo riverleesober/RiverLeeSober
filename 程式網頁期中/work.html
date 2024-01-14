@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <nav>
+        <ul id="main_menu">
+            <li><a href="index.html"><tt>Me</tt></a></li>
+            <li><a href="Obsessed.html"><tt>Musical</tt></a></li>
+            <li><a href="work.html"><tt>Music</tt></a></li>
+            <li><a href="Product.html"><tt>Work</tt></a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Me Me</title>
+    <link rel="stylesheet" href="css/work.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
+    <div class="music1" id="music1">
+        <div class="box"></div>
+        <div class="box2">
+            <div class="music">
+                <h1>Put it on me</h1>
+            </div>
+            <div align="center1">
+                <audio id="audio1" controls>
+                    <source src="../程式網頁期中/img/put-it-on-me.mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="music2" id="music2">
+        <div class="box3"></div>
+        <div class="box4">
+            <div class="music">
+                <h1>Lose Control</h1>
+            </div>
+            <div align="center">
+                <audio id="audio2" controls>
+                    <source src="../程式網頁期中/img/lose-control.mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="music3" id="music3">
+        <div class="box5"></div>
+        <div class="box6">
+            <div class="music">
+                <h1>Sinister Kid</h1>
+            </div>
+            <div align="center">
+                <audio id="audio3" controls>
+                    <source
+                        src="../程式網頁期中/img/the-black-keys-sinister-kid-remastered-10th-anniversary-edition-official-audio.mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // 預設顯示第一首歌，隱藏其他歌曲
+            $('#music1').show();
+            $('#music2').hide();
+            $('#music3').hide();
+
+            // 監聽 music1 點擊事件
+            $('#music1').click(function () {
+                // 隱藏 music1，顯示 music2
+                $('#music1').hide();
+                $('#music2').show();
+                $('#music3').hide();
+
+                // 暫停先前的歌曲
+                document.getElementById('audio1').pause();
+            });
+
+            // 監聽 music2 點擊事件
+            $('#music2').click(function () {
+                // 隱藏 music2，顯示 music1
+                $('#music1').hide();
+                $('#music2').hide();
+                $('#music3').show();
+
+                // 暫停先前的歌曲
+                document.getElementById('audio2').pause();
+            });
+            // 監聽 music3 點擊事件
+            $('#music3').click(function () {
+                // 隱藏 music3，顯示 music1
+                $('#music1').show();
+                $('#music2').hide();
+                $('#music3').hide();
+
+                // 暫停先前的歌曲
+                document.getElementById('audio3').pause();
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

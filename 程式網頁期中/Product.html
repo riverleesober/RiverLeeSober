@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <nav>
+        <ul id="main_menu">
+            <li><a href="index.html"><tt>Me</tt></a></li>
+            <li><a href="Obsessed.html"><tt>Musical</tt></a></li>
+            <li><a href="work.html"><tt>Music</tt></a></li>
+            <li><a href="Product.html"><tt>Work</tt></a></li>
+        </ul>
+    </nav>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Me Me</title>
+    <link rel="stylesheet" href="./css/Product.css">
+
+</head>
+
+
+
+<body>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img class="image" src="img/雨、提燈和馬匹.png" alt="Work 1">
+        </div>
+
+        <div class="mySlides">
+            <img class="image" src="img/霍普柯林斯.png" alt="Work 2">
+        </div>
+
+        <div class="mySlides">
+            <img class="image" src="img//雪地.png" alt="Work 3">
+        </div>
+
+        <div class="mySlides">
+            <img class="image" src="img/跨劇組2.png" alt="Work 4">
+        </div>
+
+        <div class="mySlides">
+            <img class="image" src="img/小男孩2.png" alt="Work 5">
+        </div>
+
+        <div class="mySlides">
+            <img class="image" src="img/感謝小吃.png" alt="Work 6">
+        </div>
+
+        <!-- Add more slides as needed -->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active-dot";
+        }
+
+        // 自動輪播
+        setInterval(() => {
+            plusSlides(1);
+        }, 3000); // 3 秒換一張
+    </script>
+
+</body>
+
+</html>
